@@ -1,25 +1,36 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CreateDishes from './CreateDishes';
+import CreateRestraunt from './CreateRestraunt';
+import ListDishes from './ListDishes';
+import ListRestraunt from './ListRestraunts';
+import Login from './Login';
 import logo from './logo.svg';
-import './App.css';
+import Portal from './Portal';
+// import './App.css';
+import './sb-admin-2.min.css'
+import Zomato from './Zomato';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<BrowserRouter>
+  <Routes>
+
+  <Route path='/' element={<Zomato/>}/>
+
+
+    <Route path='/zomato' element={<Login/>}/>
+
+    <Route path='/zomato/portal' element={<Portal/>}>
+      <Route path='list-restraunts' element={<ListRestraunt/>}/> 
+      <Route path='create-restraunts' element={<CreateRestraunt/>}/> 
+      <Route path='list-dishes/:rId' element={<ListDishes/>}/> 
+      <Route path='create-dishes/:rId' element={<CreateDishes/>}/> 
+    </Route>
+   
+   </Routes>
+ </BrowserRouter>
+  )
 }
+  
 
 export default App;
