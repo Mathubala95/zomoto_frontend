@@ -9,9 +9,7 @@ import { config } from './config'
 function Login() {
     const navigate = useNavigate()
 
-    useEffect(() => {
-        alert("Email : admin@123")
-      }, [])
+    
 
     const formik = useFormik({
         initialValues: {
@@ -45,7 +43,7 @@ function Login() {
                 console.log(loginreq);
                 
             }catch(error){
-                alert("Something went wrong")
+                alert("Email : admin@123")
             }
 
         }
