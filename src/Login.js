@@ -43,7 +43,7 @@ function Login() {
                 console.log(loginreq);
                 
             }catch(error){
-                alert("Email : admin@123")
+                alert("Email : admin@gmail.com, Password : Admin@123")
             }
 
         }
