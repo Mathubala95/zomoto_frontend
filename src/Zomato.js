@@ -15,6 +15,7 @@ function Zomato() {
               <h3 style={{ color: "wheat" }} class="card-text mt-5 "><small>Let's Go</small></h3>
               <Link to={"/zomato"} className='btn btn-primary mr-2 mt-3'>Admin</Link>
               <Link to={"/zomato"} className='btn btn-primary mt-3 ml-5'>User</Link>
+              
 
             </div>
           </div>

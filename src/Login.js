@@ -8,11 +8,19 @@ import { config } from './config'
 
 function Login() {
     const navigate = useNavigate()
+
+    useEffect(() => {
+        alert("Email : admin@123")
+      }, [])
+
     const formik = useFormik({
         initialValues: {
             email: "",
             password: ""
         },
+
+
+        
         validate: (values) => {
             let errors = {}
 
@@ -35,7 +43,7 @@ function Login() {
                 // await login(values)
                 navigate("/zomato/portal/list-restraunts")
                 console.log(loginreq);
-                alert("Email : admin@123, Password : Admin123")
+                
             }catch(error){
                 alert("Something went wrong")
             }
