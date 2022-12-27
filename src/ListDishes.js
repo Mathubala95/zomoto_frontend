@@ -34,13 +34,12 @@ function ListDishes() {
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                            <th>Action</th>
+                            <th>Dish Name</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                            <th>Ingredients</th>
+                            <th>Image</th>                            
+                            
 
                         </tr>
                     </thead>

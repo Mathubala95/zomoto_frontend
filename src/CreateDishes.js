@@ -58,7 +58,7 @@ function CreateDishes() {
           type={"number"} className="form-control"/>
         </div>
         <div className='col-lg-12'>
-          <label>Iamge</label>
+          <label>Image</label>
           <input 
           name='url'
           onChange={formik.handleChange}

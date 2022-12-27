@@ -37,10 +37,10 @@ function ListRestraunts() {
                                     <th>Open Time</th>
                                     <th>Close Time</th>
                                     <th>Owner Name</th>
-                                    <th>Owner Number</th>
                                     <th>Owner Email</th>
+                                    <th>Owner Phone</th>                                    
                                     <th>Restraunt</th>
-                                    <th>Address</th>
+                                    <th>Action</th>
                                     
                                 </tr>
                             </thead>
